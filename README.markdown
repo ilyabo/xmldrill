@@ -19,6 +19,6 @@ Run ant on build.xml
 
 Installation
 ============
-Drop the jar file to the Tomcat's webapps folder. The application does not require a database. 
+Drop [xmldrill.war](https://github.com/downloads/ilyabo/xmldrill/xmldrill.war) to the Tomcat's webapps folder. The application does not require a database. 
 
 
