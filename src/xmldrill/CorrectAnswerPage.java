@@ -1,4 +1,4 @@
-package ch.unifr.mme;
+package xmldrill;
 
 import java.io.Serializable;
 import java.util.List;
@@ -11,7 +11,8 @@ import org.apache.wicket.markup.repeater.data.DataView;
 import org.apache.wicket.markup.repeater.data.ListDataProvider;
 import org.apache.wicket.model.AbstractReadOnlyModel;
 
-import ch.unifr.mme.Rankings.Entry;
+import xmldrill.Rankings.Entry;
+
 
 public class CorrectAnswerPage extends BasePage implements Serializable {
 

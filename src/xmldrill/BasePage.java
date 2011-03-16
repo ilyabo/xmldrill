@@ -1,4 +1,4 @@
-package ch.unifr.mme;
+package xmldrill;
 
 
 import java.io.Serializable;
@@ -48,8 +48,8 @@ public abstract class BasePage extends WebPage implements Serializable {
         add(changeNick);
     }
 
-    public TMExercisesApplication getApp() {
-        return (TMExercisesApplication)getApplication();
+    public XmlDrillApplication getApp() {
+        return (XmlDrillApplication)getApplication();
     }
 
 }

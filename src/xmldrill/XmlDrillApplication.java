@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package ch.unifr.mme;
+package xmldrill;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -34,12 +34,12 @@ import com.Ostermiller.util.CSVParser;
 /**
  * @author Ilya Boyandin
  */
-public class TMExercisesApplication extends WebApplication
+public class XmlDrillApplication extends WebApplication
 {
 
     private final Rankings rankings;
     
-	public TMExercisesApplication()
+	public XmlDrillApplication()
 	{
 	    rankings = new Rankings();
 	}

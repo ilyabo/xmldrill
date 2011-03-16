@@ -1,4 +1,4 @@
-package ch.unifr.mme;
+package xmldrill;
 
 import org.apache.wicket.Request;
 import org.apache.wicket.Session;
@@ -34,12 +34,12 @@ public class MySession extends WebSession {
     }
 
     public int getPoints(String exercise) {
-        TMExercisesApplication app = (TMExercisesApplication)getApplication();
+        XmlDrillApplication app = (XmlDrillApplication)getApplication();
         return app.getRankings().getPoints(exercise, getNickname(), getIp());
     }
 
     public int addPoints(String exercise, int points) {
-        TMExercisesApplication app = (TMExercisesApplication)getApplication();
+        XmlDrillApplication app = (XmlDrillApplication)getApplication();
         return app.getRankings().addPoints(exercise, getNickname(), getIp(), points);
     }
 
