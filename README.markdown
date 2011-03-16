@@ -1,6 +1,8 @@
 Intro
 =====
 
+!(xmldrill - XML tree exercise)[https://github.com/ilyabo/xmldrill/raw/master/doc/screenshots/xmltree-sm.png]
+
 xmldrill is a Java web-app for students learning XML featuring the following interactive exercises:
 
 - [XML tree](https://github.com/ilyabo/xmldrill/raw/master/doc/screenshots/xmltree-compare.png): A random XML is generated and visualized as a tree. The students have to enter the XML code for it.
