@@ -1,7 +1,7 @@
 Intro
 =====
 
-!(xmldrill - XML tree exercise)[https://github.com/ilyabo/xmldrill/raw/master/doc/screenshots/xmltree-sm.png]
+![xmldrill - XML tree exercise](https://github.com/ilyabo/xmldrill/raw/master/doc/screenshots/xmltree-sm.png)
 
 xmldrill is a Java web-app for students learning XML featuring the following interactive exercises:
 
