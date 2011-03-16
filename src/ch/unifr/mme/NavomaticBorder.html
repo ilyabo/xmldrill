@@ -1,0 +1,43 @@
+<wicket:border>
+      <div id="navcontainer">
+      <!-- 
+      <style>
+      ul#nav li  { list-style-type:disc; }
+      ul#nav { padding-left:0; }
+      </style>
+       -->
+			Choose an exercise:
+          <ul id="nav">
+            <wicket:link>
+			     <!-- 
+				<li><a href = "/ch/unifr/mme/HomePage.html">Home</a></li>
+                 -->
+                <li><a href = "/ch/unifr/mme/XmlTreePage.html">XML Tree</a></li>
+                <li><a href = "/ch/unifr/mme/XmlSchemaPage.html">XML Schema</a></li>
+
+                <li><a href = "/ch/unifr/mme/EasyXsltTransformationPage.html">XSLT</a></li>
+                <li><a href = "/ch/unifr/mme/SvgGeneratorPage.html">SVG</a></li>
+                
+                <!-- 
+                <li style="color:gray">XSLT</li>
+                <li style="color:gray">SVG</li>
+                 -->                
+                
+                
+                
+                <!-- 
+                <li style="color:lightgray">XSLT Hard</li>
+                
+				<li><a href = "/ch/unifr/mme/HardXsltTransformationPage.html">XSLT Hard</a></li>
+                 -->
+                 
+                <!--
+                Commented out to prevent the users opening it in a separate tab and, as a result,
+                receiving "Page Expired" in the window with the exercise.
+                 -->
+            </wicket:link>
+          </ul>
+    </div>
+      
+      <wicket:body/>
+</wicket:border>

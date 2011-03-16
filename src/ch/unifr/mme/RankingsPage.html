@@ -1,0 +1,32 @@
+<wicket:extend>
+    <h2>Ranking</h2>
+    <form wicket:id="rankingForm">
+    <!-- 
+    <input type="checkbox" wicket:id="autoUpdateChk"/>Update automatically
+    <br/> <br/> --> 
+    Exercise: <select wicket:id="exercise"/>    
+    <table cellspacing="0" class="dataview ruler" style="min-width:300px">
+        <tr>
+            <th>Exercise</th>
+            <th>Nickname</th>
+            <th>IP-Address</th>
+            <th>Points</th>
+        </tr>
+        <tr wicket:id="rows">
+            <td wicket:id="exercise"></td>
+            <td wicket:id="nick"></td>
+            <td wicket:id="ip"></td>
+            <td wicket:id="points"></td>
+        </tr>
+    </table>
+    </form>
+    
+    <wicket:child/>
+
+<!-- 
+    <script type="text/javascript">
+    //setTimeout("location.reload()", 10000);
+    </script>
+ -->
+    
+</wicket:extend>

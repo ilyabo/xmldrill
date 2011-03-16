@@ -1,0 +1,47 @@
+<wicket:extend>
+    <h3>XML Schema</h3>
+
+<table cellspacing="0" cellpadding="0">
+<td valign="top">
+       Here you see the tree of a randomly generated XML schema:
+       
+       <pre wicket:id="schema"  class="code"/>
+
+       <div><span wicket:id="cost"/> Points</div> 
+
+    <form wicket:id="generateForm">
+        <input type="submit" value="Generate new schema" wicket:id="newInput" style="margin-top:1em"/>
+        &nbsp;of size:&nbsp;<select wicket:id="numOfTags"/> (The larger the schema, the more points you get).
+    </form>
+
+</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td valign="top">    
+    <form wicket:id="xmlTreeForm">
+        <p>
+        Below you must enter the XML code of a document which is valid in the schema to the left.
+        </p>
+        <p class="feedbackPanel" wicket:id="feedback"/>
+        
+        <code>
+        &lt;?xml version="1.0"?&gt;        
+        </code>
+        <br/>
+        <textarea wicket:id="answerXml" rows="25" cols="60" style="width:560px"></textarea>
+
+        <p>
+        Here there is an 
+        <a href="xmlschemapage-example.html" onclick="open('../xmlschemapage-example.html','mywindow','width=600,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no,resizable=yes');return false">example</a>.
+        
+        </p>
+
+        <br/>
+
+
+	    <input type="submit" value="Submit answer" wicket:id="okBut" style="margin-top:1em"/>
+        <input type="submit" value="Cancel" wicket:id="cancelBut" onclick="return confirm('Are you sure you want to leave the exercise?')"
+                style="margin-top:1em"/>
+    </form>
+</td>
+</table>    
+</wicket:extend>

@@ -1,0 +1,17 @@
+<wicket:extend>
+    <h3>SVG images</h3>
+    <pre wicket:id="generatedSvg" class="code"></pre>
+    
+    <div>Try to take a piece of paper and draw the SVG image defined by the code above.
+         When you are ready click the "Show image" button below: 
+    </div>
+    <form style="margin-top:10px" wicket:id="showImageForm">
+        <div>
+            <input type="submit" value="Show image" wicket:id="showImage"/>
+            <input type="submit" value="Generate new image" wicket:id="newImage" style="margin-left:300px"/>
+        </div>
+	    <div style="margin-top:10px">
+	        <img wicket:id="svgImage"/>
+	    </div>
+    </form>
+</wicket:extend>

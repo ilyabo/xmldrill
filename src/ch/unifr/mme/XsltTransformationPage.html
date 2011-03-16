@@ -1,0 +1,27 @@
+<wicket:extend>
+
+    <wicket:child/>
+    
+    <p>Given the following XSL stylesheet:</p>
+    <pre class="code" wicket:id="stylesheet" ></pre>
+    
+    <div class="code">and the input document:</div>
+    <pre wicket:id="generatedInput" class="code"></pre>
+    
+    <div>What the output will be?
+        Try to write down the output on a piece of paper.
+         When you are ready click the "Show output" button below: 
+    </div>
+    <form style="margin-top:10px" wicket:id="showOutputForm">
+        <div>
+            <input type="submit" value="Show output" wicket:id="showOutput"/>
+            <input type="submit" value="Toggle HTML code/rendered" wicket:id="showHtmlOutput"/>
+            <input type="submit" value="Generate new input document" wicket:id="newInput" style="margin-left:300px"/>
+        </div>
+        
+        <pre wicket:id="output" style="margin-top:10px" class="code"/>
+        <div wicket:id="outputRendered" style="margin-top:10px;margin-bottom:10px;padding:5px;border:1px solid black;" />
+
+
+    </form>
+</wicket:extend>

@@ -1,0 +1,44 @@
+<html>
+<body>
+   <style>
+   body {font:82% arial,sans-serif;}
+   </style>
+For this tree:<br/>
+<pre style="border:1px solid black; background-color:#e0e0e0">
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xs:element name="hid"&gt;
+    &lt;xs:complexType&gt;
+      &lt;xs:sequence&gt;
+        &lt;xs:element name="imp"&gt;
+          &lt;xs:complexType&gt;
+            &lt;xs:attribute name="amp" type="xs:decimal" /&gt;
+            &lt;xs:attribute name="viz" use="required" type="xs:boolean" /&gt;
+          &lt;/xs:complexType&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="mig"&gt;
+          &lt;xs:simpleType&gt;
+            &lt;xs:restriction base="xs:string"&gt;
+              &lt;xs:enumeration value="ani" /&gt;
+              &lt;xs:enumeration value="pee" /&gt;
+              &lt;xs:enumeration value="lox" /&gt;
+            &lt;/xs:restriction&gt;
+          &lt;/xs:simpleType&gt;
+        &lt;/xs:element&gt;
+      &lt;/xs:sequence&gt;
+    &lt;/xs:complexType&gt;
+  &lt;/xs:element&gt;
+&lt;/xs:schema&gt;
+
+</pre>
+<br/>
+a correct answer would be as follows:
+<br/>
+<pre style="border:1px solid black; background-color:#e0e0e0">
+&lt;hid&gt;
+  &lt;imp amp="10.5" viz="true"/&gt;
+  &lt;mig&gt;ani&lt;/mig&gt;
+&lt;/hid&gt;
+</pre>
+</body>
+</html>

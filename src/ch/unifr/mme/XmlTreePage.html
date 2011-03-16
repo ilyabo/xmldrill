@@ -1,0 +1,33 @@
+<wicket:extend>
+    <h3>XML Tree</h3>
+
+       Here you see the tree of a randomly generated XML document. Black nodes are ELEMENTS (or TAGS), 
+       green are <span style="color:green">ATTRIBUTES</span> and the blue ones are <span style="color:blue">TEXT</span>: 
+       <div style="margin-top:10px">
+           <img wicket:id="svgImage" border="0"/>
+       </div>
+       <div><span wicket:id="cost"/> Points</div> 
+
+    <form wicket:id="generateForm">
+        <input type="submit" value="Generate new tree" wicket:id="newInput" style="margin-top:1em"/>
+        &nbsp;of size:&nbsp;<select wicket:id="numOfTags"/> (The larger the tree, the more points you get).
+    </form>
+    
+    <form wicket:id="xmlTreeForm">
+        <p>
+        Below, you must enter the XML code specifying a document with the same structure as in the image above.
+        </p>
+        <p>
+        Here there is an 
+        <a href="xmltreepage-example.html" onclick="open('../xmltreepage-example.html','mywindow','width=500,height=450,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,copyhistory=no,resizable=yes');return false">example</a>.
+        
+        </p>
+        <p class="feedbackPanel" wicket:id="feedback"/>
+        <textarea wicket:id="answerXml" rows="15" cols="60" style="width:560px"></textarea>
+        <br/>
+        <input type="submit" value="Submit answer" wicket:id="okBut" style="margin-top:1em"/>
+        <input type="submit" value="Cancel" wicket:id="cancelBut" onclick="return confirm('Are you sure you want to leave the exercise?')"
+                style="margin-top:1em"/>
+    </form>
+    
+</wicket:extend>

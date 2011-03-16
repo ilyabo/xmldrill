@@ -1,0 +1,24 @@
+<wicket:extend>
+    <h3>Hard XSLT Transformation</h3>
+    
+    <p>
+    The stylesheet below has rule conflicts.
+    In general, in such cases the most specific rule has a higher priority and is applied first.
+    For instance, a rule with match="*" is always the least specific, a rule with match="A[@B]" is very specific and
+    has a high priority.  
+    You can read more about the conflict resolution for template rules 
+    <a href="http://www.w3.org/TR/xslt#conflict">here</a>.
+    </p>
+    
+    <p>
+    We oversaw that there is one unresolvable conflict in this stylesheet between 
+    the rules with match="C" and match="C|D". match="C|D" is equvalent to two rules: match="C" and match="D". 
+    That means that there are two rules in the stylesheet with match="C" which naturally have the same priority.
+    The order in which they are applied is undefined (by the <a href="http://www.w3.org/TR/xslt">XSLT recommendation</a>)
+    and thus depends on the implementation of the XSLT processor.  
+    </p>
+    
+    <p><b>Good news:</b> There will be no stylesheets with rule conflicts in the exam.</p>
+    
+    <hr/>
+</wicket:extend>

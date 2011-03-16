@@ -1,0 +1,16 @@
+<wicket:extend>
+    <h3>Nickname</h3>
+    <form wicket:id="nicknameForm">
+        <p class="feedbackPanel" wicket:id="feedback"/>
+        Choose a nickname:
+        <input type="text" wicket:id="nickname" width="50" maxlength="64"/>
+        <br/>
+        <span style="font-size:.7em">We will need it for the page with the rankings.</span>
+        <br/>
+        <span style="font-size:.7em; color:red" wicket:id="warning"></span>
+        <br/>        
+        <input type="submit" value="Submit" wicket:id="okBut" style="margin-top:1em"/>
+        <input type="submit" value="Cancel" wicket:id="cancelBut" style="margin-top:1em"/>
+    </form>
+    
+</wicket:extend>

@@ -1,0 +1,37 @@
+<project name="MutlimediaEngineering" basedir=".">
+
+    <property file="build.properties"/>
+
+    <property name="war" value="${basedir}/war"/>
+    <property name="war-name" value="MutlimediaEngineering"/>
+    <property name="dist" value="${basedir}/build"/>
+    <property name="src" value="src/"/>
+    <property name="classes" value="build/classes/"/>
+    <property name="warlib" value="${war}/WEB-INF/lib/"/>
+
+    <path id="master-classpath">
+        <fileset dir="${lib}">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${warlib}">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="PRODUCTION-war">
+        <antcall target="_create-war"><param name="env" value="production"/></antcall>
+    	<!--
+        <move file="${dist}/${war-name}-production.war" tofile="${production.deploy.target.dir}/../${war-name}.war" overwrite="true"/>
+        -->
+    </target>
+
+    <target name="_create-war">
+        <delete file="${dist}/${war-name}.war" failonerror="no"></delete>
+        <war destfile="${dist}/ROOT.war" duplicate="preserve"> <!-- ${war-name}-${env} -->
+            <fileset dir="${war}-env/${env}"/>
+            <fileset dir="${war}" />
+            <classes dir="${classes}" />
+        </war>
+    </target>
+
+</project>
