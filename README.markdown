@@ -3,7 +3,7 @@ Intro
 
 xmldrill is a Java web-app with interactive exercises for students learning XML:
 
-![xmldrill - XML tree exercise](https://github.com/ilyabo/xmldrill/raw/master/doc/screenshots/xmltree-sm.png)
+![xmldrill - XML tree exercise](https://github.com/ilyabo/xmldrill/raw/master/doc/screenshots/xmltree-sm2.png)
 
 It features the following exercises:
 
@@ -23,6 +23,5 @@ Run ant on build.xml
 
 Installation
 ============
-Drop [xmldrill.war](https://github.com/downloads/ilyabo/xmldrill/xmldrill.war) to the Tomcat's webapps folder. The application does not require a database. 
-
+Drop [xmldrill.war](https://github.com/downloads/ilyabo/xmldrill/xmldrill.war) to the Tomcat's webapps folder.
 
