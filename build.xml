@@ -24,7 +24,7 @@
 
     <target name="_create-war">
         <delete file="${dist}/${war-name}.war" failonerror="no"></delete>
-        <war destfile="${dist}/${war-name}" duplicate="preserve"> <!-- ${war-name}-${env} -->
+        <war destfile="${dist}/${war-name}.war" duplicate="preserve"> <!-- ${war-name}-${env} -->
             <fileset dir="${war}-env/${env}"/>
             <fileset dir="${war}" />
             <classes dir="${classes}" />
