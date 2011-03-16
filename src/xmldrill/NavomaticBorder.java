@@ -1,4 +1,4 @@
-package ch.unifr.mme;
+package xmldrill;
 
 import org.apache.wicket.markup.html.border.Border;
 

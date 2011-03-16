@@ -1,7 +1,7 @@
 Intro
 =====
 
-xmldrill is a Java web-app with online exercises for students learning XML featuring the following exercises:
+xmldrill is a Java web-app for students learning XML featuring the following interactive exercises:
 
 - XML tree: A random XML is generated and visualized as a tree. The students have to enter the XML code for it.
 - XML schema: A random XML schema is generated. The students have to provide a valid XML instance for the schema. 

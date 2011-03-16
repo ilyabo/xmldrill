@@ -1,4 +1,4 @@
-package ch.unifr.mme;
+package xmldrill;
 
 import java.io.Serializable;
 import java.util.Arrays;
@@ -21,7 +21,8 @@ import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.util.time.Duration;
 
-import ch.unifr.mme.Rankings.Entry;
+import xmldrill.Rankings.Entry;
+
 
 /**
  * @author Ilya Boyandin

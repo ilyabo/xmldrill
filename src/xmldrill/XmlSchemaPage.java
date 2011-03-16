@@ -1,4 +1,4 @@
-package ch.unifr.mme;
+package xmldrill;
 
 import java.io.ByteArrayInputStream;
 import java.io.Serializable;
