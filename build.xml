@@ -1,9 +1,9 @@
-<project name="MutlimediaEngineering" basedir=".">
+<project name="xmldrill" basedir="." default="PRODUCTION-war">
 
     <property file="build.properties"/>
 
     <property name="war" value="${basedir}/war"/>
-    <property name="war-name" value="MutlimediaEngineering"/>
+    <property name="war-name" value="xmldrill"/>
     <property name="dist" value="${basedir}/build"/>
     <property name="src" value="src/"/>
     <property name="classes" value="build/classes/"/>
@@ -20,14 +20,11 @@
 
     <target name="PRODUCTION-war">
         <antcall target="_create-war"><param name="env" value="production"/></antcall>
-    	<!--
-        <move file="${dist}/${war-name}-production.war" tofile="${production.deploy.target.dir}/../${war-name}.war" overwrite="true"/>
-        -->
     </target>
 
     <target name="_create-war">
         <delete file="${dist}/${war-name}.war" failonerror="no"></delete>
-        <war destfile="${dist}/ROOT.war" duplicate="preserve"> <!-- ${war-name}-${env} -->
+        <war destfile="${dist}/${war-name}" duplicate="preserve"> <!-- ${war-name}-${env} -->
             <fileset dir="${war}-env/${env}"/>
             <fileset dir="${war}" />
             <classes dir="${classes}" />
